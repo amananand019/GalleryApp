@@ -55,6 +55,7 @@ body {
 }
 
 .overlay {
+  visibility: hidden;
   position: fixed;
   height: 92vh;
   width: 100vw;
@@ -80,4 +81,26 @@ body {
   vertical-align: middle;
 
   /* border: 2px solid white; */
+}
+
+#new-image {
+  background-color: teal;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+  margin: 5px;
+}
+
+#new-image:hover {
+  transform: scale(1.02);
+}
+
+#image-list {
+  height: calc(92vh - 120px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
