@@ -1,61 +1,83 @@
 body {
-  margin: 0px;
-}
-/*********** appmenu  *********/
-/* font size increase */
-.material-icons {
-  font-size: 1.75rem;
-}
-.app-menu {
-  height: 3rem;
-  background-color: lightgrey;
-  /* vertical center icons */
-  display: flex;
-  align-items: center;
+  margin: 0%;
 }
 
-/* icons baad space  */
-.app-menu > * {
-  margin-right: 1rem;
+* {
+  box-sizing: border-box;
 }
-/* **************img list container *********/
-.img-list-container {
-  height: 7rem;
-  background-color: #aaa6a6;
-  /* images align  */
+
+.action-bar {
+  background-color: coral;
+  height: 8vh;
+  /* border: 5px solid blue; */
   display: flex;
-  align-items: center;
 }
-.img-list-container > * {
-  height: 70%;
-  margin-right: 2rem;
-  border-radius: 12%;
-}
-/* hover  */
-.img_preview:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transform: scale(1.05);
+
+.action-bar * {
+  border: 3px solid white;
+  border-radius: 5px;
+  margin: 10px 5px;
+  padding: 5px;
   cursor: pointer;
 }
-/******image preview conainer css ********/
-.img-show_container {
-  /* 100vh -> current height of 
-    your browser window */
-  height: calc(100vh - 10rem);
-  /* height:30rem; */
-  background-color: #d4cdcd;
-  /* vertically and horizontal centering */
+
+.action-bar span:hover {
+  background-color: white;
+}
+
+.action-bar select {
+  background-color: cyan;
+}
+
+.action-bar select:hover {
+  background-color: white;
+}
+
+.action-bar select option {
+  margin: 10px;
+  border-bottom: 2px solid teal;
+}
+
+.content {
+  /* background-color: blue; */
+  height: 94vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.final_image {
-  width: 80%;
-  /* resize image without 
-    lossing it's aspect ratio */
-  object-fit: contain;
-  max-height: 80%;
+
+.content-list {
+  border: 5px solid red;
+  width: 15vw;
 }
-.img-show_container > .material-icons {
-  font-size: 2rem;
+
+.content-details {
+  border: 5px solid aqua;
+  width: 85vw;
+}
+
+.overlay {
+  position: fixed;
+  height: 92vh;
+  width: 100vw;
+  top: 8vh;
+  left: 0%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+#overlay-text {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Horizontal alignment */
+  text-align: center;
+  /* vertical alignment */
+  line-height: 100px;
+  vertical-align: middle;
+
+  /* border: 2px solid white; */
 }
